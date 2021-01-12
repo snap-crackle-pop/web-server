@@ -54,7 +54,6 @@ app.get('/help/*', (req, res) => {
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
-        console.log('************1');
         return res.send({
             error: 'Address is required',
         });
